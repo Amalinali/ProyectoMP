@@ -57,17 +57,104 @@
 		text-align: center;
 	}
 
+  body {
+  	background-color: grey;
+  }
 
+  #galeria {
+
+  	border: 1px solid #EAEAEA;
+  	border-radius: 25px;
+  	padding: 20px;
+  	padding-bottom: 0;
+  	background: #0099CO;
+  	width: 940px;
+  	margin: auto;
+  }
+
+  #imgMostrar {
+
+  	border: 1px solid #F2F2F2;
+  	border-radius: 25px;
+  	width: 940px;
+  	height: 300px;
+
+  }
+
+  #galeria_miniaturas {
+
+  	display: table;
+  	margin: 0 auto;
+
+  }
+
+  .miniatura {
+  	width: 60px;
+  	height: 60px;
+  	border-radius: 10px;
+  	float: left;
+  	cursor: pointer;
+  	padding: 5px;
+  	margin: 10px 5px;
+  }
 </style>
 </head>
 <body>
 
 <div class ="background">
 <div class= "transbox">
+  <ul id="MenuBar1" class="MenuBarHorizontal" >
+    <li><a class="MenuBarItemSubmenu" href="#">Reseñas</a>
+      <ul>
+        <li><a href="#">Lista</a></li>
+        <li><a href="#">Sobre mi</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Favoritos</a></li>
+    <li><a class="MenuBarItemSubmenu" href="#">Música</a>
+      <ul>
+        <li><a class="MenuBarItemSubmenu" href="#">Moda</a>
+          <ul>
+            <li><a href="#">Lo más popular</a></li>
+            <li><a href="#">Lo menos popular</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Generos</a></li>
+
+      </ul>
+    </li>
+    <li><a href="#">Artistas</a></li>
+  </ul>
+
+
+
      <p> Música Rock </p>
 
 <h1> </h1>
-<h2> </h2>
+<h2> <div id="galeria">
+
+  <div id="galeria_principal">
+<img id="imgMostrar" src="lp.jpg">
+</div>
+
+<div id="galeria_miniaturas">
+
+<img class="miniatura" src="lp.jpg"
+onclick="document.getElementById('imgMostrar').src='lp.jpg';" >
+
+<img class="miniatura" src="john.jpg"
+onclick="document.getElementById('imgMostrar').src='john.jpg';">
+
+<img class="miniatura" src="freddie.jpg"
+onclick="document.getElementById('imgMostrar').src='freddie.jpg';">
+
+<img class="miniatura" src="elvis.jpg"
+onclick="document.getElementById('imgMostrar').src='elvis.jpg';">
+
+</div>
+</div>
+</h2>
 
 
 </font>
