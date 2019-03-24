@@ -1,34 +1,105 @@
-
-.row {
-	padding: 0px 0px 0px 20px;
-	height: 273px;
+body{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: url(fondo4.jpg) repeat #000000;
+	line-height: 19px;
 }
 
-.box_img2 {
-	width: 272px;
-	height: 273px;
-	background: url(images/box_img.jpg) 0px 0px no-repeat;
-	padding: 0px 20px 0px 20px;
+#main {
+	width: 100%;
+  height: 200px;
+	margin: 0px auto;
+	background-color: black;
+}
+
+
+
+/* ENCABEZADO */
+
+ #buttons{
+
+    	height: 50px;
+    	margin-left: 0px;
+      background: purple;
+      text-decoration: none;
+      border-radius: 10px;
+
+    }
+
+    #buttons a {
+
+    	font-family: sans-serif;
+    	font-size: 20px;
+    	display: block;
+    	float: left;
+    	text-decoration: none;
+    	color: black;
+    	text-align: center;
+    	padding-top: 10px;
+    	height: 40px;
+      border-radius: 3px;
+    }
+    .but {
+	width: 103px;
+}
+
+#buttons .but:hover {
+ background-color: white;
+ opacity: 0.3;
+
+	}
+
+
+#left label {
+	width: 103px;
 	float:left;
-	color: #FFFFFF;
+	padding: 5px 0px 0px 5px;}
+
+.input_txt2 {
+	width: 502px;
+	border: none;
+	background: url(images/input_txt2.gif) left top no-repeat;
+	padding: 8px 15px 8px 15px;
+	color:#000000;
+
 }
 
-.box_razd {
-	width: 19px;
-	height: 50px;
-	float: left;
+.text_area2 {
+	width: 611px;
+	height:112px;
+	border: none;
+	background: url(images/text_area2.gif) 0px 0px no-repeat;
+	padding: 6px 15px 6px 15px;
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.submit2 {
+	background: url(images/read.jpg) right 0px no-repeat;
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 0px 0px 0px 0px;
+	font-size:12px;
+	color: #ffffff;
+	text-decoration: none;
+	width: 66px;
+	height: 17px;
+	margin: 0px 54px 0px 0px;
 }
 
-.box_img2 h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:20px;
-	font-weight: 100;
-	color: #74DBFE;
-	text-align: left;
-	padding: 15px 0px 15px 0px;
+.box_us {
+width: 265px;
+background: url(images/box_us.gif) 0px bottom repeat-x;
+padding-left: 0px;
 }
 
-.rol_over:hover {
+.box_us_l {
+width: 28px;
+float: left;
+padding-top:0px;
+vertical-align: top;
+text-align:left;}
 
-background:url(images/rol_over_galery.png) left top no-repeat;
-}
+.box_us_r {
+width: 227px;
+float: left;}
