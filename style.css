@@ -52,34 +52,32 @@ body{
 
 /* GALERIA PERSONALIZADA */
 #carousel{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 50%;
+    height: 50%;
+  position: 0px 0px;
+  position: absolute;
     align-items: center;
     transform-style: preserve-3d;
     animation: rotation 45s infinite linear;
 }
-#carousel:hover{
-    animation-play-state: paused;
-}
+
 #carousel figure{
     display: block;
     position: absolute;
-    width: 90%;
-    height: 78%;
-    left: 10px;
-    top: 10px;
+    width: 100%;
+    height: 100%;
+    left: 0px;
     background: black;
     overflow: hidden;
     border: solid 5px black;
 }
 #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(200px);}
-#carousel figure:nth-child(2){ transform: rotateY(40deg) translateZ(288px);}
-#carousel figure:nth-child(3){ transform: rotateY(80deg) translateZ(288px);}
-#carousel figure:nth-child(4){ transform: rotateY(120deg) translateZ(288px);}
-#carousel figure:nth-child(5){ transform: rotateY(160deg) translateZ(288px);}
-#carousel figure:nth-child(6){ transform: rotateY(200deg) translateZ(288px);}
-#carousel figure:nth-child(7){ transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(2){ transform: rotateY(50deg) translateZ(288px);}
+#carousel figure:nth-child(3){ transform: rotateY(100deg) translateZ(288px);}
+#carousel figure:nth-child(4){ transform: rotateY(150deg) translateZ(288px);}
+#carousel figure:nth-child(5){ transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(6){ transform: rotateY(250deg) translateZ(288px);}
+#carousel figure:nth-child(7){ transform: rotateY(300deg) translateZ(288px);}
 #carousel img{
     -webkit-filter: grayscale(1);
     cursor: pointer;
@@ -107,13 +105,10 @@ body{
 	background: #DFDDDD;
 }
 
-
-.cont_home {
-padding: 0px 20px 0px 20px;}
-
 .home_box {
 	float: left;
-	width: 298px; }
+	width: 298px;
+padding-left: 150px;}
 
 
 
