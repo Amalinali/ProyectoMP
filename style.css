@@ -6,7 +6,7 @@ body{
 }
 
 #main {
-	width: 90%;
+	width: 100%;
   height: 200px;
 	margin: 0px auto;
 	background-color: black;
@@ -15,48 +15,63 @@ body{
 
 
 /* ENCABEZADO */
-.but {
+
+.but_home {
+	background: url(images/but_home.png) left top no-repeat;
+	height: 60px;
+	width: 30%;
+	display: block;}
+
+
+    #buttons{
+    	text-align:center;
+    	height: 60px;
+    	margin-left: 0px;
+
+    	background: url(images/menu.png) left top no-repeat;
+    }
+
+    #buttons a {
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 14px;
+    	display: block;
+    	float: left;
+    	text-decoration: none;
+    	color: #000000;
+    	text-align: center;
+    	padding-top: 10px;
+    	height: 60px;
+    }
+    .but {
 	width: 103px;
 }
 
 .but_home {
 	background: url(images/but_home.png) left top no-repeat;
-	height: 40px;
+	height: 60px;
 	width: 62px;
 	display: block;}
 
 .but_razd { width: 2px;
-	height: 40px;
+	height: 60px;
 	background:url(images/razd_but.gif) left 6px no-repeat;
-	float:left;}
+	float:left;
+}
 
 #buttons .but:hover {
 	color: #949494;
 	background:url(images/but_hov.png) center 7px no-repeat;
 	}
 
-.top { height: 360px;
-padding-top: 20px
-	}
 
-.top_text {
-	width: 942px;
-	float:left;
-	background: url(images/content_text.png);
-	height:308px;
-	padding: 0px 32px 0px 0px;}
-
-.top_img {
-	float:left;
-	padding: 15px 31px 0px 15px;
-	}
 /* GALERIA PERSONALIZADA */
 #carousel{
     width: 100%;
     height: 100%;
     position: absolute;
+    align-items: center;
     transform-style: preserve-3d;
-    animation: rotation 20s infinite linear;
+    animation: rotation 45s infinite linear;
 }
 #carousel:hover{
     animation-play-state: paused;
@@ -72,7 +87,7 @@ padding-top: 20px
     overflow: hidden;
     border: solid 5px black;
 }
-#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(200px);}
 #carousel figure:nth-child(2){ transform: rotateY(40deg) translateZ(288px);}
 #carousel figure:nth-child(3){ transform: rotateY(80deg) translateZ(288px);}
 #carousel figure:nth-child(4){ transform: rotateY(120deg) translateZ(288px);}
@@ -106,22 +121,6 @@ padding-top: 20px
 	background: #DFDDDD;
 }
 
-.cont_top{
-	background: url(images/cont_top.png) left top no-repeat;
-	height: 10px;
-	width: 100%;
-}
-
-.cont_bot{
-	background: url(images/cont_bot.png) left bottom no-repeat;
-	height: 10px;
-	width: 100%;
-}
-
-#cont_razd{
-	background: url(images/cont_razd.gif) 679px repeat-y;
-	width: 100%;
-}
 
 .cont_home {
 padding: 0px 20px 0px 20px;}
@@ -131,12 +130,7 @@ padding: 0px 20px 0px 20px;}
 	width: 298px; }
 
 
-#left{
-	width: 640px;
-	float: left;
-	color:#000000;
-	margin-left: 20px;
-}
+
 
 .text{
 	padding: 0px 0px 15px 0px;
