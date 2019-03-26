@@ -14,6 +14,12 @@ body{
   border-radius: 50px;
   opacity: 0.95;
       filter: alpha(opacity=20);
+			background-image: url(LOGO.jpg);
+			background-repeat: no-repeat;
+			background-size: 220px 175px;
+			background-position: 7% 45%;
+
+
 }
 
 
