@@ -209,6 +209,21 @@ padding-left: 140px;
 	color: #black;
 	text-align: justify;
 }
+
+/* PIE DE LA PAGINA */
+#Regresar{
+display: none; position:fixed;
+bottom: 20px; right: 30px;
+z-index: 99; font-size: 18px;
+border: none; outline: none;
+background-color:  #A0136D; color: white;
+cursor: pointer; padding: 10px 10px;
+border-radius: 5px;
+}
+
+#Rregresar:hover{
+	background-color:  #A0136D;
+}
 /* PIE DE LA PAGINA */
 
 #footer{

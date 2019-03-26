@@ -38,9 +38,10 @@
       <!-- Anclas -->
       <div id="anclas">
       <p align="left"><a href="#cap1">|| Mejor época ||</a> </p>
-        <p align="left"><a href="#cap2"> || Derivados ||</a> </p>
-          <p align="left"><a href="#cap3">||  CBTis003 ||</a> </p>
-            <p align="left"><a href="#cap4">|| Biografías ||</a> </p>
+        <p align="left"><a href="#cap4">|| Biografías ||</a> </p>
+          <p align="left"><a href="#cap2"> || Derivados ||</a> </p>
+            <p align="left"><a href="#cap3">||  CBTis003 ||</a> </p>
+
       </div>
       <!-- Fin de anclas, sigue CONTENIDO -->
 <div class="home_box">
@@ -190,6 +191,20 @@
 
 
 </div> </div>
+  <!-- SUBIR DE ANCLAS -->
+
+<button onclick="topFuction()" id="Regresar" titile="Regresar arriba" >
+<font face="sans-serif" size="5"> <b> Arriba </b> </font> </button>
+<script>
+window.onscroll = function() {scrollFuntion()};
+function scrollFuntion(){
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("Regresar").style.display = "block"; } else {
+    document.getElementById("Regresar").style.display = "none"; }}
+  function topFuction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop= 0;  } </script>
+
 
     <!-- FINAL DE CONTENIDO -->
     <div style="height:15px"></div>
