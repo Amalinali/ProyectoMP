@@ -4,37 +4,193 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>ROCK news</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<link href="grid.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="main">
 
-<header>
-<br><br>
-    <font size="40" color="white">
-    <center>THE ROCK MUSIC <center> </font> <br>
-      <font size="4" color="white">
-      <center>“En el rock reconoces algo verdadero, como en todo el arte de
-        verdad.”<center> </font>
-  <font size="2" face="font-weight" color="white">
-  <center>-John Lennon <center> </font>
-    </div>
-<br>
+<!doctype html>
+<title>CSS Grid Template 6</title>
+<style>
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav article"
+    "nav ads"
+    "footer footer";
+  grid-template-rows: 80px 1fr 70px 70px;
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: yellowgreen;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle {
+  grid-area: article;
+  }
+#mainNav {
+  grid-area: nav;
+  }
+#siteAds {
+  grid-area: ads;
+  }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  <header id="pageHeader">
+      <font size="40" color="white">
+      <center>THE ROCK MUSIC <center> </font> <br>
+        <font size="4" color="white">
+        <center>“En el rock reconoces algo verdadero, como en todo el arte de
+          verdad.”<center> </font>
+    <font size="2" face="font-weight" color="white">
+    <center>-John Lennon <center> </font>
+     </header>
 
-</header>
 
-<!-- MENU -->
-   <div id="buttons">
+  <article id="mainArticle">
+  <div class="home_box">
+      <TABLE width="100%" height="100%" align="center" border="1" CELLPADDING="15"  CELLSPACING="10">
+        <th colspan="2"> HISTORIA DEL ROCK</th>
+           <TR width="50%">
+                <TD width="50%">  <img src="concierto.jpg" width="400px"/>  </TD>
+                 <TD align="justify" width="50%"> <h3> No podemos hablar de la música rock sin antes definir sus raíces en el Rock and Roll.
+                 El término fue acuñado originalmente por Alan Freed, Dj Estadounidense quien
+                 en 1950 lo utilizó por primera vez para hacer referencia a su programa radial
+                 donde presentaba famosos artistas del R&B, Jazz y otros géneros populares de la
+                  época. Algunos Historiadores consideran uno de los eventos organizados por
+                  Freed The Moondog Coronation Ball en 1952, que reunía las estrellas del R&B de
+                  la época como el primer concierto de Rock and Roll de la historia. </h3>
+                 </TD>  </TR>
+            <TR width="50%">
+                <TD align="justify" width="50%">
+                  <a name="cap1"></a>
+
+                <h1>La mejor época del ROCK</h1>
+                <img src="precursores.png" height="400px" /> <h3>
+
+                El género nació en los Estados Unidos a principio de los años 50 producto de la
+                evolución natural del Rhythm and Blues de raíces afroamericanas y el Country,
+                influenciado por géneros variados como el Gospel, el Jazz, y el Blues, entre
+                otros y representados por artistas del momento como Chuck Berry, Bob Diddley,
+                Jerry Lee Lewis precursores de este sonido que comenzaba a dar de qué hablar
+                en la escena musical norteamericana. </h3>
+            </div>   </div>
+
+            <TD align="justify" width="50%">
+                <img src="rar.jpg" height="200px" /> <h3>
+                  1960 se considera la década mágica que define este género musical.
+                  La llegada al Reino Unido de estos sonidos provocó en la escena musical británica
+                  de la época un salto evolutivo. Es justo en este período cuando pudiéramos decir
+                  que el Rock and Roll originado en Los Estados Unidos derivó en lo que hoy conocemos
+                  como Rock.
+
+                  La música Rock emerge como válvula de escape de una juventud
+                  rebelde que para el momento buscaba su propia identidad. Bandas como The Doors y
+                  Creedence Clearwater Revival en Estados unidos o Led Zeppelin, Pink Floyd y The
+                  Beatles nacidas en Inglaterra, representaban en la época el nacimiento de un
+                  nuevo sonido y una nueva forma de hacer música, no solo para expresar historias
+                  románticas y cotidianas, a diferencia del pop, ahora también para abordar temas
+                  con un enfoque social y hasta político.
+                 </h3>
+                </TD>
+      </TABLE>
+  </div> </div> <galery>
+  <a name="cap4"></a>
+ <ul class="galeria">
+   <li><a href="#img1"><img src="freddie.jpg"></a></li>
+   <li><a href="#img2"><img src="john.jpg"></a></li>
+   <li><a href="#img3"><img src="elvis.jpg"></a></li>
+   <li><a href="#img4"><img src="lp.jpg"></a></li>
+ </ul>
+
+ <div class="modal" id="img2">
+   <h3>John Lennon<h3>
+      <h3> Artista, músico, multinstrumentista, cantautor, compositor y escritor<h3>
+       <h3>  que saltó a la fama como uno de los miembros de la banda The Beatles, <h3>
+       <h3>  reconocida como la banda exitosa y aclamada en la historia de la música.</h3>
+   <div class="imagen">
+     <a href="#img4">&#60;</a>
+     <a href="#img2"><img src="john.jpg"></a>
+     <a href="#img3">></a>
+   </div>
+   <a class="cerrar" href="">X</a>
+ </div>
+
+ <div class="modal" id="img3">
+   <h3>Elvis Presley​</h3>
+     <h3> uno de los cantantes estadounidenses más populares del siglo XX </h3>
+     <h3>  considerado como un ícono cultural. Se hace referencia a él </h3>
+      <h3> como El Rey del Rock and Roll.</h3>
+   <div class="imagen">
+     <a href="#img1">&#60;</a>
+     <a href="#img3"><img src="elvis.jpg"></a>
+     <a href="#img4">></a>
+   </div>
+   <a class="cerrar" href="">X</a>
+ </div>
+
+ <div class="modal" id="img4">
+   <h3>LP</h3>
+   <h3>Laura Pergollizi; Vocalista, músico y compositora Italo-Americana </h3>
+     <h3>que da la vuelta el mundo con su música en el mundo popular.</h3>
+   <div class="imagen">
+     <a href="#img2">&#60;</a>
+     <a href="#img4"><img src="lp.jpg"></a>
+     <a href="#img1">></a>
+   </div>
+   <a class="cerrar" href="">X</a>
+ </div>
+
+ <div class="modal" id="img1">
+   <h3>Freddie Mercury</h3>
+    <h3>Vocalista, músico y compositor que fue conocido a escala internacional como </h3>
+    <h3> líder de Queen, banda de rock británica que gozó de un éxito abrumador durante </h3>
+    <h3> los 70 y los 80</h3>
+   <div class="imagen">
+     <a href="#img3">&#60;</a>
+     <a href="#img1"><img src="freddie.jpg"></a>
+     <a href="#img2">></a>
+   </div>
+   <a class="cerrar" href="">X</a>
+ </div>
+
+
+ <br><br><br><br>
+ </galery>
+
+
+</article>
+
+
+  <nav id="mainNav">  <div id="buttons">
      <a href="mipagina.html" class="but" title="">| Historia |</a>
       <a href="galeria.html"  class="but" title="">| Bandas |</a>
       <a href="https://listas.20minutos.es/lista/los-100-mejores-cantantes-de-la-historia-del-rock-segun-rolling-stone-372021/" class="but" title="">| Rockeros |</a>
       <a href="contacto.html" class="but" title="">|  Contacto |</a>
-
     </div>
-<!-- CONTENIDO -->
-<section>
-<br>
-
-
     <div id="content">
       <!-- Anclas -->
       <div id="anclas">
@@ -42,168 +198,65 @@
         <p align="left"><a href="#cap4">|| Biografías ||</a> </p>
           <p align="left"><a href="#cap2"> || Derivados ||</a> </p>
             <p align="left"><a href="#cap3">||  CBTis003 ||</a> </p>
-
       </div>
-
-    </section>
-      <!-- Fin de anclas, sigue CONTENIDO -->
-      <article>
-
-<div class="home_box">
-    <TABLE width="100%" height="100%" align="center" border="1" CELLPADDING="15"  CELLSPACING="10">
-      <th colspan="2"> HISTORIA DEL ROCK</th>
-         <TR width="50%">
-              <TD width="50%">  <img src="concierto.jpg" width="400px"/>  </TD>
-               <TD align="justify" width="50%"> <h3> No podemos hablar de la música rock sin antes definir sus raíces en el Rock and Roll.
-               El término fue acuñado originalmente por Alan Freed, Dj Estadounidense quien
-               en 1950 lo utilizó por primera vez para hacer referencia a su programa radial
-               donde presentaba famosos artistas del R&B, Jazz y otros géneros populares de la
-                época. Algunos Historiadores consideran uno de los eventos organizados por
-                Freed The Moondog Coronation Ball en 1952, que reunía las estrellas del R&B de
-                la época como el primer concierto de Rock and Roll de la historia. </h3>
-               </TD>  </TR>
-          <TR width="50%">
-              <TD align="justify" width="50%">
-                <a name="cap1"></a>
-
-              <h1>La mejor época del ROCK</h1>
-              <img src="precursores.png" height="400px" /> <h3>
-
-              El género nació en los Estados Unidos a principio de los años 50 producto de la
-              evolución natural del Rhythm and Blues de raíces afroamericanas y el Country,
-              influenciado por géneros variados como el Gospel, el Jazz, y el Blues, entre
-              otros y representados por artistas del momento como Chuck Berry, Bob Diddley,
-              Jerry Lee Lewis precursores de este sonido que comenzaba a dar de qué hablar
-              en la escena musical norteamericana. </h3>
-          </div>   </div>
-
-          <TD align="justify" width="50%">
-              <img src="rar.jpg" height="200px" /> <h3>
-                1960 se considera la década mágica que define este género musical.
-                La llegada al Reino Unido de estos sonidos provocó en la escena musical británica
-                de la época un salto evolutivo. Es justo en este período cuando pudiéramos decir
-                que el Rock and Roll originado en Los Estados Unidos derivó en lo que hoy conocemos
-                como Rock.
-
-                La música Rock emerge como válvula de escape de una juventud
-                rebelde que para el momento buscaba su propia identidad. Bandas como The Doors y
-                Creedence Clearwater Revival en Estados unidos o Led Zeppelin, Pink Floyd y The
-                Beatles nacidas en Inglaterra, representaban en la época el nacimiento de un
-                nuevo sonido y una nueva forma de hacer música, no solo para expresar historias
-                románticas y cotidianas, a diferencia del pop, ahora también para abordar temas
-                con un enfoque social y hasta político.
-               </h3>
-              </TD>
-
-    </TABLE>
-
-</div> </div>
-
-</section>
+  </nav>
 
 
-<galery>
-<!-- GALERIA -->
-<br> <br> <br> <br>
- <a name="cap4"></a>
-<ul class="galeria">
-  <li><a href="#img1"><img src="freddie.jpg"></a></li>
-  <li><a href="#img2"><img src="john.jpg"></a></li>
-  <li><a href="#img3"><img src="elvis.jpg"></a></li>
-  <li><a href="#img4"><img src="lp.jpg"></a></li>
-</ul>
+  <div id="siteAds"><div id="content">
+  <div class="home_box">
+  <TABLE width="100%" height="100%" align="center" border="1" CELLPADDING="30"  CELLSPACING="10">
+       <TR align="justify" width="50%">
+            <TD align="justify" width="50%" rowspan="2">
+              <a name="cap2"></a>
 
-<div class="modal" id="img2">
-  <h3>John Lennon<h3>
-     <h3> Artista, músico, multinstrumentista, cantautor, compositor y escritor<h3>
-      <h3>  que saltó a la fama como uno de los miembros de la banda The Beatles, <h3>
-      <h3>  reconocida como la banda exitosa y aclamada en la historia de la música.</h3>
-  <div class="imagen">
-    <a href="#img4">&#60;</a>
-    <a href="#img2"><img src="john.jpg"></a>
-    <a href="#img3">></a>
+              <img src="rockandroll.jpg" width="300px" /> <h1>Derivados del Rock</h1>
+            <h3> Rockabilly, Pop rock, Rock psicodélico, Garage rock, Rock sinfónico, Rock progresivo,
+             Jazz rock, Glam rock, Hard rock, Punk rock, Rock gótico, Krautrock, Heavy metal, New wave, Post punk,
+             Soft rock, Rock alternativo, Noise pop, Shoegazing, Grunge, Brit pop, Dream pop, Emo, Geek rock, Indie,
+             Post rock, Rock ácido, Rock experimental, Rock instrumental, entre mucho otros. </h3></TD>
+
+             <TD align="justify" width="50%"> <h1> Hicieron historia</h1>
+                	<img src="bandas.jpg" width="400px" />
+            </TD>   </TR>
+
+        <TR align="justify" width="50%">
+           <TD align="justify" width="50%">
+              <h3>
+                No solo bandas legendarias, también grandes artistas marcaron la historia del Rock influyendo culturalmente en
+                la vida de millones de jóvenes, las llamadas leyendas del Rock, John Lennon, Jimi Hendrix, Jim Morrison,
+                Freddie Mercury, Janis Joplin, entre muchos otros que dieron pie al movimiento musical más importante de todos los tiempos.
+                Podrás encontrar sus biografias en nuestra GALERIA. </h3>
+
+
+                   <img src="cantantes.jpg" width="400px" />
+           </TD>
+
+  </TABLE>
+
+
+  </div> </div></div>
+
+
+  <footer id="pageFooter">   <!-- FINAL DE CONTENIDO -->
+      <div style="height:15px"></div>
+
+      <footer>
+  <!-- PIE DE PAGINA -->
+              <div id="footer">
+            Copyright  2019. Hecho por Amalinali Flores Jiménez<br />
+            <br>    <a name="cap3"></a>
+                  <a href="#"> <a href="http://www.cbtis003.edu.mx/">CBTIS 003 | 4BVPG</a>
   </div>
-  <a class="cerrar" href="">X</a>
-</div>
+  </footer>
+  </div></footer>
 
-<div class="modal" id="img3">
-  <h3>Elvis Presley​</h3>
-    <h3> uno de los cantantes estadounidenses más populares del siglo XX </h3>
-    <h3>  considerado como un ícono cultural. Se hace referencia a él </h3>
-     <h3> como El Rey del Rock and Roll.</h3>
-  <div class="imagen">
-    <a href="#img1">&#60;</a>
-    <a href="#img3"><img src="elvis.jpg"></a>
-    <a href="#img4">></a>
-  </div>
-  <a class="cerrar" href="">X</a>
-</div>
-
-<div class="modal" id="img4">
-  <h3>LP</h3>
-  <h3>Laura Pergollizi; Vocalista, músico y compositora Italo-Americana </h3>
-    <h3>que da la vuelta el mundo con su música en el mundo popular.</h3>
-  <div class="imagen">
-    <a href="#img2">&#60;</a>
-    <a href="#img4"><img src="lp.jpg"></a>
-    <a href="#img1">></a>
-  </div>
-  <a class="cerrar" href="">X</a>
-</div>
-
-<div class="modal" id="img1">
-  <h3>Freddie Mercury</h3>
-   <h3>Vocalista, músico y compositor que fue conocido a escala internacional como </h3>
-   <h3> líder de Queen, banda de rock británica que gozó de un éxito abrumador durante </h3>
-   <h3> los 70 y los 80</h3>
-  <div class="imagen">
-    <a href="#img3">&#60;</a>
-    <a href="#img1"><img src="freddie.jpg"></a>
-    <a href="#img2">></a>
-  </div>
-  <a class="cerrar" href="">X</a>
-</div>
+</body>
+  <div class="contenedor">
+<div id="main">
 
 
-<br><br><br><br>
-</galery>
-
-<article>
-<!-- CONTENIDO -->
-<div id="content">
-<div class="home_box">
-<TABLE width="100%" height="100%" align="center" border="1" CELLPADDING="30"  CELLSPACING="10">
-     <TR align="justify" width="50%">
-          <TD align="justify" width="50%" rowspan="2">
-            <a name="cap2"></a>
-
-            <img src="rockandroll.jpg" width="300px" /> <h1>Derivados del Rock</h1>
-          <h3> Rockabilly, Pop rock, Rock psicodélico, Garage rock, Rock sinfónico, Rock progresivo,
-           Jazz rock, Glam rock, Hard rock, Punk rock, Rock gótico, Krautrock, Heavy metal, New wave, Post punk,
-           Soft rock, Rock alternativo, Noise pop, Shoegazing, Grunge, Brit pop, Dream pop, Emo, Geek rock, Indie,
-           Post rock, Rock ácido, Rock experimental, Rock instrumental, entre mucho otros. </h3></TD>
-
-           <TD align="justify" width="50%"> <h1> Hicieron historia</h1>
-              	<img src="bandas.jpg" width="400px" />
-          </TD>   </TR>
-
-      <TR align="justify" width="50%">
-         <TD align="justify" width="50%">
-            <h3>
-              No solo bandas legendarias, también grandes artistas marcaron la historia del Rock influyendo culturalmente en
-              la vida de millones de jóvenes, las llamadas leyendas del Rock, John Lennon, Jimi Hendrix, Jim Morrison,
-              Freddie Mercury, Janis Joplin, entre muchos otros que dieron pie al movimiento musical más importante de todos los tiempos.
-              Podrás encontrar sus biografias en nuestra GALERIA. </h3>
 
 
-                 <img src="cantantes.jpg" width="400px" />
-         </TD>
-
-</TABLE>
-
-
-</div> </div>
-</article>
 
   <!-- SUBIR DE ANCLAS -->
 <section>
@@ -220,22 +273,6 @@ function scrollFuntion(){
     document.documentElement.scrollTop= 0;  } </script>
 
 </section>
-<br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-   <!-- FINAL DE CONTENIDO -->
-    <div style="height:15px"></div>
 
-    <footer>
-<!-- PIE DE PAGINA -->
-            <div id="footer">
-          Copyright  2019. Hecho por Amalinali Flores Jiménez<br />
-          <br>    <a name="cap3"></a>
-                <a href="#"> <a href="http://www.cbtis003.edu.mx/">CBTIS 003 | 4BVPG</a>
 
-</div>
-</footer>
 </html>
