@@ -44,7 +44,16 @@ nav {
 	background-size: 220px 175px;
 	background-position: 7% 45%;
   }
-
+p {
+	padding-top: 15px;
+	font-size: 30px;
+		text-align: center;
+		color: white;
+	}
+h6 {
+	text-align: center;
+	color: white;
+}
 #pageFooter {
   grid-area: footer;
 		font-size: 20px;
@@ -93,16 +102,24 @@ nav {
 			 text-align: center;
 			 padding-top: 10px;
 			 }
- #mainNav a:hover {
-	background-color: #73106C;
-	opacity: 0.9;
-	border-radius: 10px;
-  }
-	#anclas p:hover{
-		background: #73106C;
-		opacity: 0.9;
-		border-radius: 10px;
-	}
+			 .vertical-menu {
+			   width: 300px;
+			 }
+			 .vertical-menu a {
+			   background-color: #A0136D;
+			   color: black;
+			   display: block;
+			   padding: 30px;
+			   text-decoration: none;
+				 border-radius: 15px;
+			 }
+			 .vertical-menu a:hover {
+			   background-color: #ccc;
+			 }
+			 .vertical-menu a.active {
+			   background-color: #4CAF50;
+			   color: white;
+			 }
 
 #siteAds {
   grid-area: ads;
@@ -116,16 +133,15 @@ nav {
 
   }
 /* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
+@media screen and (max-width: 678px) {
   body {
     grid-template-areas:
-      "header"
+      "header "
       "article"
       "ads"
       "nav"
       "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;
-    grid-template-columns: 1fr;
+
  }
 }
 
@@ -219,3 +235,8 @@ border-radius: 5px; }
 
 #Rregresar:hover{
 background-color:  #A0136D; }
+
+
+
+
+/******************************************************************************************************************************/
