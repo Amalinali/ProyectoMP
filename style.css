@@ -1,4 +1,5 @@
 body {
+	padding-top: 5px;
 		color: #000000;
 		background: url(fondo4.jpg) repeat #000000;
 		line-height: 19px;
@@ -34,13 +35,12 @@ nav {
 
 #pageHeader {
   grid-area: header;
-
 	width: 100%;
 	margin: 0px auto;
 	background-color: #73106C;
 	border-radius: 50px;
 	opacity: 0.95;
-	background-image: url(LOGO.jpg);
+	background-image: url(logo.png);
 	background-repeat: no-repeat;
 	background-size: 220px 175px;
 	background-position: 7% 45%;
