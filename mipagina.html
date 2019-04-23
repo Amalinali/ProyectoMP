@@ -1,230 +1,723 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>ROCK news</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="grid.css" media="(max-width: 800px)" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>ROCK | News</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="original-load"></div>
+        </div>
+    </div>
 
-  <header id="pageHeader">
+    <!-- Subscribe Modal -->
+    <div class="subscribe-newsletter-area">
+        <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="modal-body">
+                        <h5 class="title">Subscribe to my newsletter</h5>
+                        <form action="#" class="newsletterForm" method="post">
+                            <input type="email" name="email" id="subscribesForm2" placeholder="Your e-mail here">
+                            <button type="submit" class="btn original-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <p>THE ROCK MUSIC </p>
-      <p>“En el rock reconoces algo verdadero, como en todo el arte de
-          verdad.”</p>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
 
-    <h6>-John Lennon </h6>
-     </header>
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Hello World!</a></li>
+                                    <li><a href="#">Hello Universe!</a></li>
+                                    <li><a href="#">Hello Original!</a></li>
+                                    <li><a href="#">Hello Earth!</a></li>
+                                    <li><a href="#">Hello Colorlib!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Social Area -->
+                    <div class="col-12 col-sm-4">
+                        <div class="top-social-area">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Logo Area -->
+        <div class="logo-area text-center">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <a href="index.html" class="original-logo"><img src="img/core-img/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <article id="mainArticle">
-  <div class="home_box">
-      <TABLE width="100%" height="100%" align="center" border="1" CELLPADDING="15"  CELLSPACING="10">
-        <th colspan="2"> HISTORIA DEL ROCK</th>
-           <TR width="50%">
-                <TD width="50%">  <img src="concierto.jpg" width="400px"/>  </TD>
-                 <TD align="justify" width="50%"> <h3> El Rock, es un género musical que se caracteriza por los significados que contienen
-                    las letras de las músicas que lo integran. Mas en él, se pueden expresar un sinfín de cosas, entre ellos sentimientos,
-                     felicidad o tristeza, recuerdos, incluso la filosofía se adueña también de este ámbito con algunos grupos, sin embargo,
-                     no podemos hablar de la música rock sin antes definir sus raíces en el Rock and Roll.
-                 El término fue acuñado originalmente por Alan Freed, Dj Estadounidense quien
-                 en 1950 lo utilizó por primera vez para hacer referencia a su programa radial
-                 donde presentaba famosos artistas del R&B, Jazz y otros géneros populares de la
-                  época. Algunos Historiadores consideran uno de los eventos organizados por
-                  Freed The Moondog Coronation Ball en 1952, que reunía las estrellas del R&B de
-                  la época como el primer concierto de Rock and Roll de la historia. </h3>
-                <h3>  Los instrumentos que forman parte del rock, son por la mayoría de los casos, la batería, el bajo, la guitarra y en
-                  algunas ocasiones lo suelen hacer también los teclados o pianos.
-                  El Rock, con el correr de las décadas ha sufrido combinaciones con otros géneros como los anteriormente citados.</h3>
-                 </TD>  </TR>
-            <TR width="50%">
-                <TD align="justify" width="50%">
-                  <a name="cap1"></a>
+        <!-- Nav Area -->
+        <div class="original-nav-area" id="stickyNav">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between">
 
-                <h1>La mejor época del ROCK</h1>
-                <img src="precursores.png" height="400px" /> <h3>
+                        <!-- Subscribe btn -->
+                        <div class="subscribe-btn">
+                            <a href="#" class="btn subscribe-btn" data-toggle="modal" data-target="#subsModal">Subscribe</a>
+                        </div>
 
-                El género nació en los Estados Unidos a principio de los años 50 producto de la
-                evolución natural del Rhythm and Blues de raíces afroamericanas y el Country,
-                influenciado por géneros variados como el Gospel, el Jazz, y el Blues, entre
-                otros y representados por artistas del momento como Chuck Berry, Bob Diddley,
-                Jerry Lee Lewis precursores de este sonido que comenzaba a dar de qué hablar
-                en la escena musical norteamericana. </h3>
-            </div>   </div>
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
 
-            <TD align="justify" width="50%">
-                <img src="rar.jpg" height="200px" /> <h3>
-                  1960 se considera la década mágica que define este género musical.
-                  La llegada al Reino Unido de estos sonidos provocó en la escena musical británica
-                  de la época un salto evolutivo. Es justo en este período cuando pudiéramos decir
-                  que el Rock and Roll originado en Los Estados Unidos derivó en lo que hoy conocemos
-                  como Rock.
+                        <!-- Menu -->
+                        <div class="classy-menu" id="originalNav">
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
 
-                  La música Rock emerge como válvula de escape de una juventud
-                  rebelde que para el momento buscaba su propia identidad. Bandas como The Doors y
-                  Creedence Clearwater Revival en Estados unidos o Led Zeppelin, Pink Floyd y The
-                  Beatles nacidas en Inglaterra, representaban en la época el nacimiento de un
-                  nuevo sonido y una nueva forma de hacer música, no solo para expresar historias
-                  románticas y cotidianas, a diferencia del pop, ahora también para abordar temas
-                  con un enfoque social y hasta político.
-                 </h3>
-                </TD>
-      </TABLE>
-      <br> <br> <br> <br>
-  </div> </div> <galery>
-  <a name="cap4"></a>
- <ul class="galeria">
-   <li><a href="#img1"><img src="freddie.jpg"></a></li>
-   <li><a href="#img2"><img src="john.jpg"></a></li>
-   <li><a href="#img3"><img src="elvis.jpg"></a></li>
-   <li><a href="#img4"><img src="lp.jpg"></a></li>
- </ul>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="single-post.html">Single Post</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Catagory</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Catagory 1</a></li>
+                                            <li><a href="#">Catagory 1</a></li>
+                                            <li><a href="#">Catagory 1</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                    <li><a href="#">Catagory 2</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                            <li><a href="#">Catagory 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                    <li><a href="#">Catagory 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Catagory 1</a></li>
+                                            <li><a href="#">Catagory 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="#">Megamenu</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 1</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 2</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 3</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Headline 4</li>
+                                                <li><a href="#">Mega Menu Item 1</a></li>
+                                                <li><a href="#">Mega Menu Item 2</a></li>
+                                                <li><a href="#">Mega Menu Item 3</a></li>
+                                                <li><a href="#">Mega Menu Item 4</a></li>
+                                                <li><a href="#">Mega Menu Item 5</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
 
- <div class="modal" id="img2">
-   <h3>John Lennon<h3>
-      <h3> Artista, músico, multinstrumentista, cantautor, compositor y escritor<h3>
-       <h3>  que saltó a la fama como uno de los miembros de la banda The Beatles, <h3>
-       <h3>  reconocida como la banda exitosa y aclamada en la historia de la música.</h3>
-   <div class="imagen">
-     <a href="#img4">&#60;</a>
-     <a href="#img2"><img src="john.jpg"></a>
-     <a href="#img3">></a>
-   </div>
-   <a class="cerrar" href="">X</a>
- </div>
+                                <!-- Search Form  -->
+                                <div id="search-wrapper">
+                                    <form action="#">
+                                        <input type="text" id="search" placeholder="Search something...">
+                                        <div id="close-icon"></div>
+                                        <input class="d-none" type="submit" value="">
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
 
- <div class="modal" id="img3">
-   <h3>Elvis Presley​</h3>
-     <h3> uno de los cantantes estadounidenses más populares del siglo XX </h3>
-     <h3>  considerado como un ícono cultural. Se hace referencia a él </h3>
-      <h3> como El Rey del Rock and Roll.</h3>
-   <div class="imagen">
-     <a href="#img1">&#60;</a>
-     <a href="#img3"><img src="elvis.jpg"></a>
-     <a href="#img4">></a>
-   </div>
-   <a class="cerrar" href="">X</a>
- </div>
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area">
+        <!-- Hero Slides Area -->
+        <div class="hero-slides owl-carousel">
+            <!-- Single Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b2.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="post-tag">
+                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                </div>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="post-tag">
+                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                </div>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b3.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="slide-content text-center">
+                                <div class="post-tag">
+                                    <a href="#" data-animation="fadeInUp">lifestyle</a>
+                                </div>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Hero Area End ##### -->
 
- <div class="modal" id="img4">
-   <h3>LP</h3>
-   <h3>Laura Pergollizi; Vocalista, músico y compositora Italo-Americana </h3>
-     <h3>que da la vuelta el mundo con su música en el mundo popular.</h3>
-   <div class="imagen">
-     <a href="#img2">&#60;</a>
-     <a href="#img4"><img src="lp.jpg"></a>
-     <a href="#img1">></a>
-   </div>
-   <a class="cerrar" href="">X</a>
- </div>
+    <!-- ##### Blog Wrapper Start ##### -->
+    <div class="blog-wrapper section-padding-100 clearfix">
+        <div class="container">
+            <div class="row align-items-end">
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="single-blog-area clearfix mb-100">
+                        <!-- Blog Content -->
+                        <div class="single-blog-content">
+                            <div class="line"></div>
+                            <a href="#" class="post-tag">Lifestyle</a>
+                            <h4><a href="#" class="post-headline">Welcome to this Lifestyle blog</a></h4>
+                            <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Morbi sodales, dolor id ultricies dictum</p>
+                            <a href="#" class="btn original-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-catagory-area clearfix mb-100">
+                        <img src="img/blog-img/1.jpg" alt="">
+                        <!-- Catagory Title -->
+                        <div class="catagory-title">
+                            <a href="#">Lifestyle posts</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-catagory-area clearfix mb-100">
+                        <img src="img/blog-img/2.jpg" alt="">
+                        <!-- Catagory Title -->
+                        <div class="catagory-title">
+                            <a href="#">latest posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
- <div class="modal" id="img1">
-   <h3>Freddie Mercury</h3>
-    <h3>Vocalista, músico y compositor que fue conocido a escala internacional como </h3>
-    <h3> líder de Queen, banda de rock británica que gozó de un éxito abrumador durante </h3>
-    <h3> los 70 y los 80</h3>
-   <div class="imagen">
-     <a href="#img3">&#60;</a>
-     <a href="#img1"><img src="freddie.jpg"></a>
-     <a href="#img2">></a>
-   </div>
-   <a class="cerrar" href="">X</a>
- </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
 
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/3.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/4.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
- </galery>
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1000ms">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/7.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">10 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content mt-50">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">10 Tips to organize the perfect party</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/5.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-</article>
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1000ms">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="img/blog-img/6.jpg" alt="">
+                                    <div class="post-date">
+                                        <a href="#">12 <span>march</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <!-- Blog Content -->
+                                <div class="single-blog-content">
+                                    <div class="line"></div>
+                                    <a href="#" class="post-tag">Lifestyle</a>
+                                    <h4><a href="#" class="post-headline">We love colors in 2018</a></h4>
+                                    <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+                                    <div class="post-meta">
+                                        <p>By <a href="#">james smith</a></p>
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-  <nav id="mainNav">
-    <div class="vertical-menu">
-     <a href="mipagina.html" class="but" title="">| Historia |</a>
-      <a href="galeria.html"  class="but" title="">| Bandas |</a>
-      <a href="https://listas.20minutos.es/lista/los-100-mejores-cantantes-de-la-historia-del-rock-segun-rolling-stone-372021/" class="but" title="">| Rockeros |</a>
-      <a href="contacto.html" class="but" title="">|  Contacto |</a>
-</div>
-      <!-- Anclas -->
-      <div id="anclas">
-      <p align="left"><a href="#cap1">|| Mejor época ||</a> </p>
-        <p align="left"><a href="#cap4">|| Biografías ||</a> </p>
-          <p align="left"><a href="#cap2"> || Derivados ||</a> </p>
-            <p align="left"><a href="#cap3">||  CBTis003 ||</a> </p>
-      </div>
-  </nav>
+                    <!-- Load More -->
+                    <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                        <a href="#" class="btn original-btn">Read More</a>
+                    </div>
+                </div>
 
+                <!-- ##### Sidebar Area ##### -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="post-sidebar-area">
 
-  <div id="siteAds"><div id="content">
-  <div class="home_box">
-  <TABLE width="100%" height="100%" align="center" border="1" CELLPADDING="30"  CELLSPACING="10">
-       <TR align="justify" width="50%">
-            <TD align="justify" width="50%" rowspan="2">
-              <a name="cap2"></a>
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <form action="#" class="search-form">
+                                <input type="search" name="search" id="searchForm" placeholder="Search">
+                                <input type="submit" value="submit">
+                            </form>
+                        </div>
 
-              <img src="rockandroll.jpg" width="300px" /> <h1>Derivados del Rock</h1>
-            <h3> Rockabilly, Pop rock, Rock psicodélico, Garage rock, Rock sinfónico, Rock progresivo,
-             Jazz rock, Glam rock, Hard rock, Punk rock, Rock gótico, Krautrock, Heavy metal, New wave, Post punk,
-             Soft rock, Rock alternativo, Noise pop, Shoegazing, Grunge, Brit pop, Dream pop, Emo, Geek rock, Indie,
-             Post rock, Rock ácido, Rock experimental, Rock instrumental, entre mucho otros. </h3></TD>
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title subscribe-title">Subscribe to my newsletter</h5>
+                            <div class="widget-content">
+                                <form action="#" class="newsletterForm">
+                                    <input type="email" name="email" id="subscribesForm" placeholder="Your e-mail here">
+                                    <button type="submit" class="btn original-btn">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
 
-             <TD align="justify" width="50%"> <h1> Hicieron historia</h1>
-                	<img src="bandas.jpg" width="400px" />
-            </TD>   </TR>
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Advertisement</h5>
+                            <a href="#"><img src="img/bg-img/add.gif" alt=""></a>
+                        </div>
 
-        <TR align="justify" width="50%">
-           <TD align="justify" width="50%">
-              <h3>
-                No solo bandas legendarias, también grandes artistas marcaron la historia del Rock influyendo culturalmente en
-                la vida de millones de jóvenes, las llamadas leyendas del Rock, John Lennon, Jimi Hendrix, Jim Morrison,
-                Freddie Mercury, Janis Joplin, entre muchos otros que dieron pie al movimiento musical más importante de todos los tiempos.
-                Podrás encontrar sus biografias en nuestra GALERIA. </h3>
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Latest Posts</h5>
 
+                            <div class="widget-content">
 
-                   <img src="cantantes.jpg" width="400px" />
-           </TD>
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp1.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
 
-  </TABLE>
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp2.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp3.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
 
-  </div> </div></div>
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp4.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Tags</h5>
+                            <div class="widget-content">
+                                <ul class="tags">
+                                    <li><a href="#">design</a></li>
+                                    <li><a href="#">fashion</a></li>
+                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">music</a></li>
+                                    <li><a href="#">party</a></li>
+                                    <li><a href="#">video</a></li>
+                                    <li><a href="#">photography</a></li>
+                                    <li><a href="#">adventure</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Wrapper End ##### -->
 
-  <footer id="pageFooter">   <!-- FINAL DE CONTENIDO -->
-      <div style="height:15px"></div>
+    <!-- ##### Instagram Feed Area Start ##### -->
+    <div class="instagram-feed-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="insta-title">
+                        <h5>Follow us @ Instagram</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Instagram Slides -->
+        <div class="instagram-slides owl-carousel">
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/1.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/2.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/3.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/4.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/5.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/6.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="img/instagram-img/7.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Instagram Feed Area End ##### -->
 
-      <footer>
-  <!-- PIE DE PAGINA -->
-              <div id="footer">
-            Copyright  2019. Hecho por Amalinali Flores Jiménez<br />
-            <br>    <a name="cap3"></a>
-                  <a href="#"> <a href="http://www.cbtis003.edu.mx/">CBTIS 003 | 4BVPG</a>
-  </div>
-  </footer>
-  </div></footer>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Footer Nav Area -->
+                    <div class="classy-nav-container breakpoint-off">
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-center">
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+
+                            <!-- Menu -->
+                            <div class="classy-menu">
+
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">travel</a></li>
+                                        <li><a href="#">Music</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- Footer Social Area -->
+                    <div class="footer-social-area mt-30">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 
 </body>
-
-
-
-
-
-  <!-- SUBIR DE ANCLAS -->
-<section>
-<button onclick="topFuction()" id="Regresar" titile="Regresar arriba" >
-<font face="sans-serif" size="5"> <b> Arriba </b> </font> </button>
-<script>
-window.onscroll = function() {scrollFuntion()};
-function scrollFuntion(){
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("Regresar").style.display = "block"; } else {
-    document.getElementById("Regresar").style.display = "none"; }}
-  function topFuction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop= 0;  } </script>
-
-</section>
-
 
 </html>
