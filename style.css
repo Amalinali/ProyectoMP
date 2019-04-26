@@ -24,6 +24,10 @@
 body {
   font-family: "helveticaneuemedium";
 background: url(fondo4.jpg) repeat #000000;
+padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+
 
 }
 
@@ -41,9 +45,9 @@ h6 {
   font-family: "helveticaneuemedium"; }
 
 p {
-  color: #878787;
-  font-size: 14px;
-  line-height: 1.4;
+  color: black;
+  font-size: 18px;
+  line-height: 0;
   font-family: "helveticaneuemedium"; }
 
 a {
@@ -339,7 +343,7 @@ img {
     border-bottom: 1px solid #73106C; }
     @media only screen and (max-width: 767px) {
       .header-area .logo-area {
-        height: 100px; } }
+        height: 200px; } }
   .header-area .original-nav-area {
     height: 100px; }
     @media only screen and (max-width: 767px) {
@@ -356,23 +360,30 @@ img {
       text-transform: uppercase;
       line-height: 40px;
       padding: 0; }
+
       .header-area .original-nav-area .subscribe-btn a:hover, .header-area .original-nav-area .subscribe-btn a:focus {
-        background-color: #73106C; }
+        background-color: #73106C;
+			  }
     .header-area .original-nav-area .classynav ul li a {
+
       text-transform: uppercase;
-      color: white; }
+      color: white;
+		background-color: #73106C;}
       .header-area .original-nav-area .classynav ul li a:focus, .header-area .original-nav-area .classynav ul li a:hover {
-        color: black; }
+        color: black;
+
+			  background-color: #73106C;}
     .header-area .original-nav-area .classy-nav-container {
-      background-color: #73106C; }
+      background-color: #73106C;
+ }
     .header-area .original-nav-area .classy-navbar {
       height: 100px;
-      padding: 0; }
+      padding: 15px; }
       @media only screen and (max-width: 767px) {
         .header-area .original-nav-area .classy-navbar {
           height: 70px; } }
   .header-area .is-sticky .original-nav-area {
-    background-color: #ffffff;
+    background-color: white;
     margin-top: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     position: fixed;
@@ -486,8 +497,16 @@ img {
 
 /* Blog Content Area CSS */
 .single-blog-area {
+	background: #DFDDDD;
+opacity: 0.90;
+border-radius: 20px;
   position: relative;
-  z-index: 1; }
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+  z-index: 1;
+}
   .single-blog-area .single-blog-thumbnail {
     position: relative;
     z-index: 1; }
@@ -736,7 +755,7 @@ img {
       top: 0;
       left: 0;
       z-index: 10;
-      background-color: rgba(48, 51, 107, 0.95);
+      background-color: #A0136D;;
       opacity: 0;
       visibility: hidden; }
     .instagram-feed-area .single-insta-feed:hover .hover-effects a, .instagram-feed-area .single-insta-feed:focus .hover-effects a {
@@ -1230,8 +1249,8 @@ textarea:focus ~ .highlight {
     transform: rotate(-45deg) scaleX(0) translateY(-10px); } }
 /* Footer Area CSS */
 .footer-area {
+	width: 100%;
 	background-color: black;
-  padding: 60px 0;
   position: relative;
   z-index: 1;
  }
