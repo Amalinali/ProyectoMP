@@ -42,8 +42,9 @@ img {
 .classy-nav-container {
   position: relative;
   z-index: 100;
-  background-color: #ffffff;
-  /* sticky */ }
+  background-color: #73106C;
+  /* sticky */
+  }
   .classy-nav-container * {
     box-sizing: border-box; }
   .classy-nav-container a {
