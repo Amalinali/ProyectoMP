@@ -427,8 +427,8 @@ img {
 .hero-area {
 	background-color: #DFDDDD;
 	opacity: 0.95;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .hero-slides {
   position: relative;
@@ -436,7 +436,7 @@ img {
   .hero-slides .single-hero-slide {
     position: relative;
     z-index: 1;
-    height: 550px; }
+    height: 670px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .hero-slides .single-hero-slide {
         height: 500px; } }
@@ -532,23 +532,28 @@ border-radius: 20px;
       top: 15px;
       border: 1px solid #787878;
       background-color: #ffffff;
-      text-align: center; }
+      text-align: center;
+		}
       .single-blog-area .single-blog-thumbnail a {
         font-size: 24px;
         text-transform: uppercase;
         color: #000000;
         line-height: 1;
-        font-family: "helveticaneuemedium"; }
+        font-family: "helveticaneuemedium";
+			}
         .single-blog-area .single-blog-thumbnail a span {
           display: block;
           font-family: "Open Sans", sans-serif;
           font-size: 11px;
-          color: #878787; }
+          color: #878787;
+				 }
   .single-blog-area .single-blog-content .line {
     background-color: #c8c8c8;
     width: 26px;
     height: 2px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-radius: 20px;
+		}
   .single-blog-area .single-blog-content .post-tag {
     color: #a1a1a1;
     font-size: 11px;
@@ -904,24 +909,33 @@ border-radius: 20px;
 .cool-facts-area {
   position: relative;
   z-index: 1;
-  background-attachment: fixed; }
+	
+  background-attachment: fixed;
+}
   .cool-facts-area .single-blog-area .line {
     margin: 0 auto 15px;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+	}
   .cool-facts-area .single-blog-area .post-tag {
-    color: #ffffff; }
+    color: #ffffff;
+	}
   .cool-facts-area .single-blog-area .post-headline {
-    color: #ffffff; }
+    color: #ffffff;
+	}
   .cool-facts-area .single-blog-area p {
-    color: #ffffff; }
+    color: #ffffff;
+	}
   .cool-facts-area .single-cool-facts-area h2 {
     font-size: 72px;
     color: #ffffff;
-    line-height: 1; }
+    line-height: 1;
+	}
   .cool-facts-area .single-cool-facts-area p {
     margin-bottom: 0;
     font-size: 18px;
-    color: #ffffff; }
+    color: #ffffff;
+	}
+
 
 /* AREA DE CONTACTO CSS */
 .contact-area {
