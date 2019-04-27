@@ -367,7 +367,7 @@ img {
       line-height: 40px;
       padding: 0; }
 
-      .header-area .original-nav-area .subscribe-btn a:hover, .header-area .original-nav-area .subscribe-btn a:focus {
+      .header-area .original-nav-area a:hover, .header-area .original-nav-area a:focus {
         background-color: #73106C;
 			  }
     .header-area .original-nav-area .classynav ul li a {
@@ -797,51 +797,8 @@ border-radius: 20px;
       .breadcumb-area .breadcumb-content h2 {
         font-size: 30px; } }
 
-.blog-post-author {
-  position: relative;
-  z-index: 1;
-  padding: 70px 0;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #c5c5c5; }
-  .blog-post-author .author-thumbnail {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 132px;
-    flex: 0 0 132px;
-    min-width: 132px;
-    padding-right: 20px;
-    width: 112px;
-    height: 112px;
-    border-radius: 50%; }
-    @media only screen and (max-width: 767px) {
-      .blog-post-author .author-thumbnail {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 90px;
-        flex: 0 0 90px;
-        min-width: 90px; } }
-    .blog-post-author .author-thumbnail img {
-      border-radius: 50%; }
-  .blog-post-author .author-info .line {
-    background-color: #c8c8c8;
-    width: 26px;
-    height: 2px;
-    margin-bottom: 20px; }
-  .blog-post-author .author-info .author-role {
-    color: #a1a1a1;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    display: block; }
-  .blog-post-author .author-info h4 a {
-    display: inline-block;
-    color: #000000;
-    font-size: 24px;
-    margin-bottom: 0; }
-  .blog-post-author .author-info p {
-    line-height: 2;
-    margin-bottom: 0;
-    font-family: "Open Sans", sans-serif; }
+
+
 
 .single-blog-wrapper .single-blog-area .single-blog-content p {
   font-family: "Open Sans", sans-serif; }
@@ -909,7 +866,7 @@ border-radius: 20px;
 .cool-facts-area {
   position: relative;
   z-index: 1;
-	
+
   background-attachment: fixed;
 }
   .cool-facts-area .single-blog-area .line {
