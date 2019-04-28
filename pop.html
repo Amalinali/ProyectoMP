@@ -112,15 +112,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="single-blog-area blog-style-2 text-center mb-100">
-
+                    <div class="single-blog-titulo blog-style-2 text-center mb-100">
     <!-- Blog Content -->
     <div class="single-blog-content">
         <div class="line"></div>
         <a href="#" class="post-tag">Music Rock</a>
-        <h4><a href="#" class="post-headline">Rock Pop</a></h4>
-        <p>Hemos creado un listado de las mejores bandas de Rock de todos los tiempos
-        </p>
+        <h2>Rock Pop</h2>
+
     </div>
 </div>
 </div>
@@ -471,6 +469,21 @@ La música Rock emerge como válvula de escape de una juventud rebelde que para 
             </div>
             <!-- TERMINA AREA DE INSTAGRAM-->
 
+            <section>
+            <button onclick="topFuction()" id="Regresar" titile="Regresar arriba" >
+            <font face="sans-serif"> <b> Arriba </b> </font> </button>
+            <script>
+            window.onscroll = function() {scrollFuntion()};
+            function scrollFuntion(){
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("Regresar").style.display = "block"; } else {
+                document.getElementById("Regresar").style.display = "none"; }}
+              function topFuction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop= 0;  } </script>
+
+            </section>
+
             <!-- PIE DE PAGINA= footer-area -->
             <footer class="footer-area text-center">
                 <div class="container">
@@ -485,10 +498,10 @@ La música Rock emerge como válvula de escape de una juventud rebelde que para 
                                     <div class="classy-menu">
                                         <div class="classynav">
                                             <ul>
-                                                <li><a href="#">| Inicio/Historia |</a></li>
-                                                <li><a href="#">| Bandas |</a></li>
-                                                <li><a href="#">| Cantantes |</a></li>
-                                                <li><a href="#">| Contacto |</a></li>
+                                              <li><a href="inicio.html">| Inicio/Historia |</a></li>
+                                              <li><a href="bandas.html">| Bandas |</a></li>
+                                              <li><a href="cantantes.html">| Cantantes |</a></li>
+                                              <li><a href="contacto.html">| Contacto |</a></li>
                                             </ul>
                                         </div>
                                         <!-- TERMINA EL MENU EN PIE DE PAGINA-->
